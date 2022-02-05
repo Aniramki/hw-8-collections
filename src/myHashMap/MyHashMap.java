@@ -145,23 +145,7 @@ public class MyHashMap<K,V> {
                 bucket.set(i, null);
                 size--;
             }
-//            else
-//            {
-//                HashNode<K, V>prev=null;
-//                while(head!=null)
-//                {
-//
-//                    if(head.key.equals(key))
-//                    {
-//                        prev.next=head.next;
-//                        size--;
-//                        return head.value;
-//                    }
-//                    prev=head;
-//                    head=head.next;
-//                }
-//                return null;
-     //       }
+
         }        }
         //size = 0;
     }
