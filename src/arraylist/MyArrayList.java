@@ -55,7 +55,9 @@ public class MyArrayList<T> {
             System.arraycopy(data, indexToRemove + 1, newData, indexToRemove, amountElementAfterIndex);
 
         data = newData;
-        }
+        index--;
+
+    }
     public boolean contains(Object o) {
 
 
@@ -81,7 +83,7 @@ public class MyArrayList<T> {
     @Override
     public String toString() {
         StringJoiner result = new StringJoiner(", ");
-        for (int i = 0; i < index-1; i++) {
+        for (int i = 0; i < index; i++) {
             result.add(data[i].toString());
         }
 

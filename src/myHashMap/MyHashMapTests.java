@@ -11,7 +11,7 @@ public class MyHashMapTests {
         hashMap.put(3, "3");
         hashMap.put(4, "4");
         hashMap.put(5, "5");
-        System.out.println("1 size = " + hashMap.getSize());
+        System.out.println("1 size = " + hashMap.size());
 
         hashMap.put(1, "1");
         hashMap.put(2, "2");
@@ -20,7 +20,7 @@ public class MyHashMapTests {
         hashMap.remove(2);
         System.out.println("3-" + hashMap.get(2));
 
-        i = hashMap.getSize();
+        i = hashMap.size();
         System.out.println("4 size = " + i);
 
         l = hashMap.get(6);
@@ -32,7 +32,7 @@ public class MyHashMapTests {
 
         hashMap.clear();
         System.out.println("7-" + hashMap.get(1));
-        System.out.println("8 size = " + hashMap.getSize());
+        System.out.println("8 size = " + hashMap.size());
 
     }
 }

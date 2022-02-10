@@ -6,8 +6,8 @@ import java.util.HashMap;
 public class MyHashMap<K,V> {
 
     ArrayList<HashNode<K, V>>bucket=new ArrayList<>();
-    int numBuckets=10;
-    int size;
+    private int numBuckets=10;
+    private int size;
     public MyHashMap()
     {
         for(int i=0;i<numBuckets;i++)
@@ -15,7 +15,7 @@ public class MyHashMap<K,V> {
             bucket.add(null);
         }
     }
-    public int getSize()
+    public int size()
     {
         return size;
     }

@@ -1,5 +1,7 @@
 package arraylist;
 
+import java.util.Arrays;
+
 public class MyArrayListTest {
         public static void main(String[] args) {
             MyArrayList<String> list = new MyArrayList<>();
@@ -14,7 +16,7 @@ public class MyArrayListTest {
             list.add("Igor");
             list.add("Igor");
 
-
+            System.out.println(list.toString());
             list.remove(1);
             System.out.println(list.contains("Igor"));
 
