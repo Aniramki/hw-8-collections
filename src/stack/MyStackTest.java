@@ -23,9 +23,11 @@ public class MyStackTest {
         System.out.println("stack to remove = " + stack.remove(0));
 
         System.out.println("size = " + (i = stack.size()));
-        System.out.println("poll = " + (l = stack.poll()));
+        System.out.println("pop1 = " + (l = stack.pop()));
         System.out.println("peek = " + (l = stack.peek()));
-        System.out.println("poll = " + ( l = stack.poll()));
+        System.out.println("pop2 = " + ( l = stack.pop()));
+        System.out.println("peek = " + (l = stack.peek()));
+
         System.out.println("size = " + (i = stack.size()));
 
         stack.clear();

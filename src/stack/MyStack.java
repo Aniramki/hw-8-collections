@@ -88,8 +88,8 @@ public class MyStack<T> {
 
     }
 
-    public T poll() {
-
+    public T pop() {
+        T tail1 = tail.getValue();
         if (head == null) {
             count = 0;
             return null;
@@ -97,13 +97,13 @@ public class MyStack<T> {
         Node<T> node = head;
 
         Node<T> next = node.getNext();
-        for (int i = 0; i < count; i++) {
-            next = node.getNext();
+        for (int i = 0; i < count-1; i++) {
+            next = node;
             node = node.getNext();
-            count--;
-        break;}
-             tail.setValue(node.getValue());
-        return node.getValue();
+        }
+        count--;
+        tail.setValue(next.getValue());
+        return tail1;
 
     }
 
